@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+    
+    
+}
+
+.banner{
+     height:100vh;
+     width: 100%;
+     background-position: center;
+     background-size: cover;
+     background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(hero-bg.jpg);
+     
+     
+
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+
+
+.content{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color:black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+span{
+    background: grey;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.para{
+    display: flex;
+    padding-bottom: 10%;
+
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10% 5% 10% 5% ;
+    text-align: center;
+    box-shadow: 1px 1px grey;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+
+}
+
+h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+.txy{
+    color: red;
+    border-color: white;
+    background-color: pink;
+}
+
+.menu1{
+    
+    border: 0;
+    width: 50px;
+    
+    background-color:red;
+    border-color: grey;
+
+
+}
+
+.menu2{
+    border-color: grey;
+    background-color: grey;
+    width: 50px;
+    border: 0;
+}
+
+
+.menu3{
+    border-color: grey;
+    background-color: grey;
+    width: 50px;
+    border: 0;
+}
+
+
+
+
+.menu4{
+    border-color: grey;
+    background-color: grey;
+    width: 50px;
+    border: 0;
+}
+
+
+.main{
+   
+    margin-left:70px;
+    display:flex;
+    justify-content:space-around;
+    
+    padding-top: 20px;
+    border: 0;
+
+   
+
+    
+}
+
+.important{
+    margin-left:70px;
+    display:flex;
+    justify-content:space-around;
+    align-items:left;
+    padding-top: 10px;
+}
+
+.images{
+    margin-left:70px;
+    display:flex;
+    justify-content:space-around;
+    align-items:left;
+    padding-top: 10px;
+}
+.top{
+    max-width: 75%;
+    margin: 0 auto;
+    
+}
+.profession{
+    border-color: grey;
+    background-color:pink;
+    width: 100px;
+    border: 0;
+    color: red;
+
+    
+
+}
+
+.team{
+    margin-left:70px;
+    display:flex;
+    justify-content:space-around;
+    align-items:left;
+    padding-top: 10px;
+    border: 0;
+
+}
+
+    
+
+.priority{
+
+    max-width: 100%;
+    margin: 0 auto;
+    border: 0;
+
+}
+
+
+
+
+
+
+
+
+
+.numb{
+    
+        border-color: grey;
+        background-color:pink;
+        width: 100px;
+        border: 0;
+        color: red;
+    
+        
+    
+    }
+
+    
+    .contact-info{
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .contact-info div {
+        padding-right: 20px;
+        margin-bottom: 30px;
+            
+    
+    }
+    .contact-info p {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Style the icons */
+    .contact-info i {
+        margin-right: 20px;
+        color: pink; /* Adjust the color as needed */
+    }
+
+
+    .contact-info span {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .contact-info strong {
+        margin-right: 5px;
+    }
+
+    /* Form styling */
+    .contact-container {
+        
+        
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 200px; /* Adjust the gap as needed */
+    }
+
+    .contact-form {
+        flex: 1; /* Take remaining width */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Style the name and email textboxes */
+    .contact-form .name-email {
+        display: flex;
+        gap: 10px;
+    }
+
+    .numb2{
+    
+        border-color: grey;
+        background-color:red;
+        width: 200px;
+        border: 0;
+        color:pink;
+        margin-left:250px;
+        
+        
+    
+    }
+
+    .contact-form textarea {
+        height: 150px; /* Adjust the height as needed */
+    }
+
+
+
+    .btn{
+        
+    border-color: grey;
+    background-color:pink;
+    width: 100px;
+    border: 0;
+    color: red;
+    }
+
+
+html{
+    height: 200%;
+
+}
+
+body{
+    height: 200%;
+
+}
+
+
+body{
+    Maxwidth: 1280 px;
+    Margin: 0 auto;
+    Overflow-x: hidden
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
